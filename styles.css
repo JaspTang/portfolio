@@ -3,6 +3,95 @@ body {
     font-size: large; 
 }
 
-.Heading {
-    background: yellow;
+.Style {
+    text-align: center;
+}
+  
+  .Base {
+    width: 100rem;
+    height: 375vh;
+    background-color: #e5e5f7;
+  
+    background-image: linear-gradient(180deg, #145e64, rgb(2, 20, 25));
+}
+  
+.Category {
+    text-align: center;
+    color: rgb(103, 167, 175);
+    background-color: rgb(255, 255, 255, 0.25);
+  
+    margin: auto;
+    margin-top: 100px;
+  
+    padding: 10px;
+    border-radius: 20px;
+    
+    font-size:120px;
+    font-family: Poppins;
+  
+    width: 75rem;
+    height: 1000px;
+    
+}
+  
+.Header {
+    text-align: center;
+  
+    color: rgb(163, 231, 235);
+  
+    font-family: Poppins;
+    font-size: 175px;
+    letter-spacing: 5px;
+  
+    background-image: linear-gradient(80deg, #b6d7bf, rgb(140, 158, 100));
+  
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  
+}
+  
+.ParagraphText {
+    margin-top: 75px;
+    margin-bottom: 75px;
+    font-size: 70px;
+    font-weight: 700;
+    color:rgb(132, 198, 207);
+  
+    background-image: linear-gradient(45deg, rgb(124, 51, 135), rgb(3, 109, 35));
+  
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+  
+.ParagraphText:hover {
+    opacity: 0.5;
+}
+  
+.Note {
+    color:rgb(35, 171, 205);
+    font-size: 25px;
+    font-family: monospace;
+  
+    width:100rem;
+  
+    margin-top: 260px;
+  
+    text-align: center;
+}
+  
+.LinkText {
+    margin-bottom: 75px;
+    font-size: 70px;
+    font-weight: 700;
+    color:rgb(132, 198, 207);
+  
+    background-image: linear-gradient(45deg, rgb(124, 63, 134), rgb(3, 109, 35));
+  
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+  
+.Subtext {
+    font-size: 30px;
+    --a:
 }
