@@ -1,2 +1,4 @@
 # portfolio
-Personal website and portfolio -- jasp.me
+jasp.me: my first published website
+    ---> personal portfolio
+    ---> uses css, js, html
