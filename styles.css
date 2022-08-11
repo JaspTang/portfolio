@@ -1,9 +1,9 @@
 body {
-    background-image: linear-gradient(45deg, rgb(41, 34, 170), rgb(3, 93, 30));
+    background-image: -webkit-linear-gradient(45deg, rgb(41, 34, 170), rgb(3, 93, 30));
 
     color: white;
     font-family: 'Poppins', sans-serif;
-    text-align: center;
+    text-align: -webkit-center;
 
     font-size: 50px;
 
@@ -22,6 +22,13 @@ p {
     font-size: 30px;
 }
 
+img {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    animation: bounce 3s infinite;
+}
+
 .textBlock {
     /*background-color: 10px solid rgba(120, 194, 216, 0.4);*/
     background-color: rgb(0,0,0); 
@@ -35,13 +42,20 @@ p {
     padding: 50px;
 }
 
+.sectionTitle {
+    margin-top: 50px;
+    margin-bottom: 80px;
+    font-size:175px;
 
+    background-image: -webkit-linear-gradient(0deg, rgb(242, 192, 192), rgb(154, 95, 95), rgb(242, 192, 192));
+    background-size: 400%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
 
-img {
-    width: 100px;
-    height: 100px;
-    position: relative;
-    animation: bounce 3s infinite;
+    animation: titleColor 5s infinite;
+    -webkit-animation: titleColor 5s infinite;
+    animation-timing-function: cubic-bezier(.17,0,.8,.99);
 }
 
 @keyframes bounce {
@@ -51,4 +65,33 @@ img {
     100% { bottom:0px;}
 }
 
+@keyframes colorChange {
+    0% {color: rgb(9, 78, 78);}
+    25% {color: rgb(129, 154, 129);}
+    50% {color: rgb(9, 78, 78)}
+    100% {color: rgb(9, 78, 78);}
+}
+
+@keyframes titleColor {
+    0% {background-position: 0%;}
+    50% {background-position: 100%;}
+    100% {background-position: 0%;}
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 5px;
+    background: none;
+}
+
+::-webkit-scrollbar-thumb {
+    background: teal;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    animation: colorChange 10s infinite;
+}
 
