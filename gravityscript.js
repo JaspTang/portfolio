@@ -32,7 +32,6 @@ var click = 1;
 var thisCircle;
 
 function setup() {
-
   createCanvas(windowWidth, windowHeight);
   smooth();
   textSize(20);
