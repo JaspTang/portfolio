@@ -56,18 +56,33 @@
 
             <button class="block" onclick="location.href='photos.html'">Photography</button>
 
-            <div class="dropdown">
-                <span>Games</span>
-                <div class="dropdown-content" style="left: 100px;">
-                    <p>Hello!</p>
-                </div>
-            </div>
-            <p>Computer Engineering</p> <!---Add a dropdown menu<-->
+            <button type="button" class="collapsible">Games</button>
+            <div class="expanded-content">Hello World!</div>
+
+            <button type="button" class="collapsible">Engineering</button>
+            <div class="expanded-content">Hello World!</div>
+            
         </div>
+
+        <script>
+            var coll = document.getElementsByClassName("collapsible");
+            
+            for (i = 0; i < coll.length; i++) {
+              coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                  content.style.display = "none";
+                } else {
+                  content.style.display = "block";
+                }
+              });
+            }
+            </script>
   
         <div style="width: 1000px; background-color: rgb(0,0,0,0.35); border-radius: 20px; margin: auto; color: white;">
-            <sub>[<a href="https://github.com/JaspTang" style="color: white">github.com/JaspTang</a>] &emsp; 
-                [ <em>jtang.az@gmail.com</em> ]</sub>
+            <sub><a href="https://github.com/JaspTang" style="color: white">github.com/JaspTang</a> &emsp; 
+                 <em>jtang.az@gmail.com</em> </sub>
         </div>
     </div>
 </body>

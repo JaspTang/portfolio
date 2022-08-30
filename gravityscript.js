@@ -31,8 +31,11 @@ var mode = 1;
 var click = 1;
 var thisCircle;
 
+var windowHeight1 = 600;
+var windowWidth1 = 1200;
+
 function setup() {
-  createCanvas(windowWidth, windowHeight);
+  createCanvas(windowWidth1, windowHeight1);
   smooth();
   textSize(20);
   textAlign(20, 20);
@@ -118,7 +121,7 @@ class PhysicsObject {
 
     this.drawCircle = drawCircle;
 
-    this.height = (windowHeight - this.y) / normalFR;
+    this.height = (windowHeight1 - this.y) / normalFR;
     this.maxHeight;
 
     this.gpe = this.getPE(this.mass, this.height);
@@ -146,26 +149,26 @@ class PhysicsObject {
     this.x = this.x - this.vX;
     this.vY = this.vY + (ACCELERATION * time);
 
-    if (this.y > windowHeight) {
-      this.y = windowHeight;
+    if (this.y > windowHeight1) {
+      this.y = windowHeight1;
     }
 
-    this.height = (windowHeight - this.y) / normalFR;
+    this.height = (windowHeight1 - this.y) / normalFR;
 
     this.gpe = this.getPE(this.mass, this.height);
     this.ke = this.getKE(this.mass, this.velocity);
     this.energy = this.getE(this.gpe, this.ke);
 
     //boundaries
-    if (this.x >= windowWidth) {
+    if (this.x >= windowWidth1) {
       this.x = 0;
     }
     else if (this.x <= 0) {
-      this.x = windowWidth;
+      this.x = windowWidth1;
     }
 
     //energy & ff calculation
-    if (this.y >= windowHeight) {
+    if (this.y >= windowHeight1) {
       this.maxGPE *= (bouncePercent / 100);
       
       this.maxHeight = (this.maxGPE) / (this.mass * ACCELERATION);

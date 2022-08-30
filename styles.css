@@ -127,6 +127,62 @@ img {
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
+.collapsible {
+    background-color: rgba(0,0,0, 0.40);
+    border-radius: 50px;
+    width: 850px;
+    
+    cursor: pointer;
+    border: none;
+    text-align: center;
+
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 20px;
+
+    border-color: transparent;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+    text-align: -webkit-center;
+
+    transition: .5s ease;
+}
+
+.collapsible:hover {
+    background-color: rgba(0,0,0, 0.5);
+}
+
+.expanded-content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50px;
+    width: 750px;
+    
+    border: none;
+    text-align: center;
+
+    margin: auto;
+    margin-top: 0px;
+    margin-bottom: 15px;
+    padding: 20px;
+
+    border-color: transparent;
+    color: rgba(255, 255, 255, 0.712);
+    font-family: 'Poppins', sans-serif;
+    font-size:  20px;
+    text-align: -webkit-center;
+
+    animation: collapse cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
+    
+}
+
+
   
 
 @keyframes bounce {
@@ -160,6 +216,11 @@ img {
     80% { transform: translate(-1px, -1px) rotate(1deg); }
     90% { transform: translate(1px, 2px) rotate(0deg); }
     100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+@keyframes collapse {
+    0% {transform: translate(0px, -50px);}
+    100% {transform: translate(0px, 0px);}
 }
 
 
