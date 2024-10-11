@@ -43,9 +43,29 @@ canvas {
   height: 50px;
 
   filter: invert(1);
+
+  transition: .5s ease;
 }
 
 .home:hover {
   cursor: pointer;
+  width: 60px;
+  height: 60px;
 }
-  
+ 
+p {
+  font-size: 30px;
+}
+
+.textBlock {
+  /*background-color: 10px solid rgba(120, 194, 216, 0.4);*/
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.35);
+  border-radius: 50px;
+  width: 950px;
+
+  margin:auto;
+  margin-top: 10px;
+  margin-bottom:10px;
+  padding: 20px;
+}
