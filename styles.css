@@ -71,7 +71,7 @@ img {
     color: white;
     font-family: 'Poppins', sans-serif;
     font-size: 50px;
-    text-align: -webkit-center;
+    text-align: center;
 }
 
 .block:hover{
@@ -156,7 +156,7 @@ img {
 }
 
 .expanded-content {
-    padding: 0 18px;
+    padding: 0px 18px;
     display: none;
     overflow: hidden;
 

@@ -6,7 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,900;1,100;1,400;1,900&display=swap" rel="stylesheet">
-    <title>Gravity Sim</title>
+    <title>Physics Engine</title>
 
     <link rel="stylesheet" type="text/css" href="gravitycss.css">
     <script src="libraries/p5.min.js"></script>
@@ -23,10 +23,15 @@
 
 <body>
     <img class="home" src="homeIcon.svg" onclick="location.href='index.html'"></img>
+    <div>
+        <div class="displaySim">
+            Gravity Simulation
+            <script src="gravityscript.js"></script>
+        </div>
     
-    <div class="displaySim">
-        Gravity Simulation
-        <script src="gravityscript.js"></script>
+        <div style="padding-left: 15%; padding-right: 15%; font-size: medium;">
+                Tap on the blue box and a ball will appear! If you have a mouse, try moving your mouse to give the ball horizontal momentum as it falls!
+        </div>
     </div>
 </body>
 
